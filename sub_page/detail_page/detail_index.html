@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>warmtable_detail_page</title>
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    
+    <!---font--->
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    
+     <!--gsap-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+     
+     <!--Script-->
+    <script src="./js/detail.js" defer></script>
+
+</head>
+<body>
+  <div class="popup_box">
+    <a href="#!">
+      <input type="checkbox" id="popup_chk" checked>
+      <div class="popup">
+        <img src="./images/팝업.png" alt="event 팝업">
+        <label for="popup_chk" class="popup_lab"></label>
+      </div>
+    </a>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="gnb_box">
+      <ul>
+      <li><a href="#!"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      <li><a href="#!">로그인</a></li>
+      <li><a href="#!">회원가입</a></li>
+      <li><a href="#!">마이페이지</a></li>
+      <li><a href="#!">고객센터</a></li>
+      </ul>
+    </nav><!---gnb--->
+
+
+    <section class="logo_box">
+      <div><a href="../../index.html"><img src="./images/로고.png" alt="로고이미지"></a></div>
+    </section><!---logo--->
+
+
+    <section class="lnb_box">
+      <div class="box">
+        <nav class="lnb">
+          <input type="checkbox" id="chk_menu">
+
+          <ul class="lnb_left">
+            <label for="chk_menu" class="open">
+            <img src="./images/chk_btn.jpg" alt="햄버거버튼">
+            </label>
+          </ul>
+          
+          
+          <ul class="lnb_mid">
+            <li class="fredoka_txt"><a href="../sub_index.html">BEST</a></li>
+            <li class="fredoka_txt"><a href="../sub_index.html">NEW</a></li>
+            <li class="nanum_txt_b table"><a href="../sub_index.html">테이블</a>
+              <ul>
+                <li class="sub_left">
+                  <ul>
+                      <li><a href="#!">밥,국그릇</a></li>
+                      <li><a href="#!">면그릇</a></li>
+                      <li><a href="#!">접시</a></li>
+                      <li><a href="#!">볼</a></li>
+                      <li><a href="#!">컵</a></li>
+                  </ul>
+                </li>
+                  
+                <li class="sub_mid">
+                  <ul>
+                    <li><a href="#!">커트러리</a></li>
+                  </ul>
+                </li>
+                
+                <li class="sub_right">
+                  <ul>
+                    <li class="sub_product01">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/table_menu_sub01.jpg" alt="테이블서브이미지01"></li>
+                          <li class="sub_txt_large">플리츠 디저트글라스</li>
+                          <li class="sub_price">5,000원</li>
+                        </ul>
+                      </a>
+                    </li>
+
+                    <li class="sub_product02">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/table_menu_sub02 .jpg" alt="테이블서브이미지02"></li>
+                          <li class="sub_txt">코요 화이트 꽃잎 볼</li>
+                          <li class="sub_price">10,800원</li>
+                        </ul>
+                      </a>
+                    </li>
+                    <li class="sub_product03">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/table_menu_sub03 .jpg" alt="테이블서브이미지03"></li>
+                          <li class="sub_txt">우드 시노기 공기</li>
+                          <li class="sub_price">12,000원</li>
+                        </ul>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li><!--table sub menu-->
+            
+
+            <li class="nanum_txt_b table"><a href="../sub_index.html">키친</a>
+              <ul>
+                <li class="sub_left">
+                  <ul>
+                      <li><a href="#!">조리도구</a></li>
+                      <li><a href="#!">냄비</a></li>
+                      <li><a href="#!">후라이팬</a></li>
+                      <li><a href="#!">주방수납</a></li>
+                      <li><a href="#!">세척도구</a></li>
+                  </ul>
+                </li>
+                
+                <li class="sub_mid">
+                  <ul>
+                      <li><a href="#!">얼음틀</a></li>
+                      <li><a href="#!">계랑도구</a></li>
+                      <li><a href="#!">주방매트</a></li>
+                  </ul>
+                </li>
+                
+                <li class="sub_right">
+                  <ul>
+                    <li class="sub_product01">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/kitchen_menu_sub01.jpg" alt="테이블서브이미지01"></li>
+                          <li class="sub_txt_large">허그 프렌즈 주방매트트</li>
+                          <li class="sub_price">36,000원</li>
+                        </ul>
+                      </a>
+                    </li>
+
+                    <li class="sub_product02">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/kitchen_menu_sub02.jpg" alt="테이블서브이미지02"></li>
+                          <li class="sub_txt">아이자와 국자&구멍국자</li>
+                          <li class="sub_price">10,500원</li>
+                        </ul>
+                      </a>
+                    </li>
+
+                  <li class="sub_product03">
+                    <a href="#!">
+                      <ul>
+                        <li class="sub_img"><img src="./images/kitchen_menu_sub03.jpg" alt="테이블서브이미지03"></li>
+                        <li class="sub_txt">접이식 아이스 스쿱</li>
+                        <li class="sub_price">3,000원</li>
+                      </ul>
+                    </a>
+                  </li>
+                  </ul>
+                </li>
+              </ul>
+            </li><!--kitchen sub menu-->
+
+            <li class="nanum_txt_b table"><a href="../sub_index.html">카페</a>
+              <ul>
+                <li class="sub_left">
+                  <ul>
+                    <li><a href="#!">커피잔</a></li>
+                    <li><a href="#!">머그컵</a></li>
+                    <li><a href="#!">찻잔</a></li>
+                    <li><a href="#!">티포트</a></li>
+                    <li><a href="#!">식탁보</a></li>
+                  </ul>
+                </li>
+                  
+                <li class="sub_mid">
+                  <ul>
+                    <li><a href="#!">조화·화병</a></li>
+                    <li><a href="#!">디저트컵</a></li>
+                    <li><a href="#!">티코스터</a></li>
+                  </ul>
+                </li>
+                  
+                <li class="sub_right">
+                  <ul>
+                    <li class="sub_product01">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/cafe_menu_sub01 .jpg" alt="테이블서브이미지01"></li>
+                          <li class="sub_txt_large">홈파티 2인세트</li>
+                          <li class="sub_price">84,000원</li>
+                        </ul>
+                      </a>
+                    </li>
+
+                    <li class="sub_product02">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/cafe_menu_sub02.jpg" alt="테이블서브이미지02"></li>
+                          <li class="sub_txt">레트로 빈티지 티코스터터</li>
+                          <li class="sub_price">2,800원</li>
+                        </ul>
+                      </a>
+                    </li>
+
+                    <li class="sub_product03">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/cafe_menu_sub03.jpg" alt="테이블서브이미지03"></li>
+                          <li class="sub_txt">볼록이 카페유리컵</li>
+                          <li class="sub_price">5,500원</li>
+                        </ul>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li><!--cafe sub menu-->
+
+            <li class="nanum_txt_b table"><a href="../sub_index.html">피크닉</a>
+              <ul>
+                <li class="sub_left">
+                  <ul>
+                    <li><a href="#!">도시락</a></li>
+                    <li><a href="#!">바구니</a></li>
+                    <li><a href="#!">헬리오스</a></li>
+                    <li><a href="#!">캔들홀더</a></li>
+                    <li><a href="#!">법랑제품</a></li>
+                  </ul>
+                </li>
+                  
+                <li class="sub_mid">
+                  <ul>
+                    <li><a href="#!">레트로그릇</a></li>
+                    <li><a href="#!">인테리어소품</a></li>
+                  </ul>
+                </li>
+                  
+                <li class="sub_right">
+                  <ul>
+                    <li class="sub_product01">
+                      <a href="#!">
+                          <ul>
+                            <li class="sub_img"><img src="./images/picnic_menu_sub01.jpg" alt="테이블서브이미지01"></li>
+                            <li class="sub_txt_large">어라운드 우드1단 도시락</li>
+                            <li class="sub_price">18,000원</li>
+                          </ul>
+                      </a>
+                    </li>
+
+                    <li class="sub_product02">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/picnic_menu_sub02.jpg" alt="테이블서브이미지02"></li>
+                          <li class="sub_txt">곰돌이 패브릭포스터</li>
+                          <li class="sub_price">3,800원</li>
+                        </ul>
+                      </a>
+                    </li>
+
+                    <li class="sub_product03">
+                      <a href="#!">
+                        <ul>
+                          <li class="sub_img"><img src="./images/picnic_menu_sub03.jpg" alt="테이블서브이미지03"></li>
+                          <li class="sub_txt">헬리오스 보온병(3size)</li>
+                          <li class="sub_price">22,000원</li>
+                        </ul>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li><!--picnic sub menu-->
+          </ul><!--lnb_mid-->
+
+          <ul class="lnb_right">
+            <input type="text" placeholder="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </ul>
+
+          <div class="menu_box">
+            <label for="chk_menu" class="close"><i class="fa-solid fa-x"></i></label>
+            
+            <ul class="color">
+              <li><a href="../sub_index.html">BEST</a></li>
+              <li><a href="../sub_index.html">NEW</a></li>
+              <li><a href="../sub_index.html">EVENT</a></li>
+            </ul>
+            
+            <ul class="color">
+              <li><a href="../sub_index.html">당일발송</a></li>
+              <li><a href="../sub_index.html">재입고</a></li>
+              <li><a href="../sub_index.html">SALE</a></li>
+            </ul>
+            
+            <ul>
+              <li><a href="../sub_index.html">밥,국그릇</a></li>
+              <li><a href="../sub_index.html">면그릇</a></li>
+              <li><a href="../sub_index.html">접시</a></li>
+              <li><a href="../sub_index.html">볼</a></li>
+              <li><a href="../sub_index.html">커트러리</a></li>
+              <li><a href="#!">젓가락받침</a></li>
+              <li><a href="#!">트레이</a></li>
+              <li><a href="#!">1인세트</a></li>
+            </ul>
+            
+            <ul>
+              <li><a href="#!">조리도구</a></li>
+              <li><a href="#!">냄비</a></li>
+              <li><a href="#!">후라이팬</a></li>
+              <li><a href="#!">주방수납</a></li>
+              <li><a href="#!">세척도구</a></li>
+              <li><a href="#!">얼음틀</a></li>
+              <li><a href="#!">계량도구</a></li>
+              <li><a href="#!">주방매트</a></li>
+            </ul>
+            
+            <ul>
+              <li><a href="#!">커피잔</a></li>
+              <li><a href="#!">머그컵</a></li>
+              <li><a href="#!">찻잔</a></li>
+              <li><a href="#!">티포트</a></li>
+              <li><a href="#!">식탁보</a></li>
+              <li><a href="#!">조화,화병</a></li>
+              <li><a href="#!">디저트컵</a></li>
+              <li><a href="#!">티코스터</a></li>
+            </ul>
+            
+            <ul>
+              <li><a href="#!">도시락</a></li>
+              <li><a href="#!">바구니</a></li>
+              <li><a href="#!">헬리오스</a></li>
+              <li><a href="#!">캔들홀더</a></li>
+              <li><a href="#!">법랑제품</a></li>
+              <li><a href="#!">레트로그릇</a></li>
+              <li><a href="#!">인테리어 소품</a></li>
+            </ul>
+            
+            <div><img src="./images/풀다운메뉴 로고.png" alt="풀다운메뉴로고이미지"></div>
+          </div>
+        </nav>
+      </div>
+    </section><!---lnb--->
+  </header><!---header--->
+
+  <section class="detail_route">
+   <p><a href="../../index.html">HOME</a><i class="fa-solid fa-chevron-right"></i></p>
+   <p><a href="../sub_index.html">테이블</a><i class="fa-solid fa-chevron-right"></i></p>
+   <p><a href="../sub_index.html">컵</a></p>
+  </section><!---detail_route--->
+
+
+  <section class="detail_main">
+    <input type="radio" id="rad01" name="rad_img" checked >
+    <input type="radio" id="rad02" name="rad_img">
+    <input type="radio" id="rad03" name="rad_img">
+    <input type="radio" id="rad04" name="rad_img">
+    <input type="radio" id="rad05" name="rad_img">
+
+    <div class="main_left">
+      <div class="sheet01"><img src="./images/detail_main_01.jpg" alt="메인이미지01"></div>
+      <div class="sheet02"><img src="./images/detail_main_02.jpg" alt="메인이미지02"></div>
+      <div class="sheet03"><img src="./images/detail_main_03.jpg" alt="메인이미지03"></div>
+      <div class="sheet04"><img src="./images/detail_main_04.jpg" alt="메인이미지04"></div>
+      <div class="sheet05"><img src="./images/detail_main_05.jpg" alt="메인이미지05"></div>
+     
+
+
+      <div class="img_label">
+        <label for="rad01" class="lab01"><img src="./images/main_sub01.jpg" alt="서브이미지01"></label>
+        <label for="rad02" class="lab02"><img src="./images/main_sub02.jpg" alt="서브이미지02"></label>
+        <label for="rad03" class="lab03"><img src="./images/main_sub03.jpg" alt="서브이미지03"></label>
+        <label for="rad04" class="lab04"><img src="./images/main_sub04.jpg" alt="서브이미지04"></label>
+        <label for="rad05" class="lab05"><img src="./images/main_sub05.jpg" alt="서브이미지05"></label>
+      </div>
+  
+    </div>
+   
+    <div class="main_right">
+      <div class="right_top">
+        <p>[당일발송]플리츠 디저트 글라스-후르츠</p>
+        <div class="top_price_txt">
+          <p>판매가<br/><br/> 결제수단</p>
+          <p>5000원<br/><br/>카드결제, 무통장 입금, 휴대폰 결제, 적립금 </p>
+        </div>
+      </div>
+      
+      <div class="right_mid">
+        <div class="mid_top_txt">
+         <p>용량</p> 
+          <select>
+            <option>플라워글라스</option>
+            <option>오렌지글라스</option>
+            <option>블루베리글라스</option>
+            <option>복숭아글라스</option>
+          </select>
+        </div>
+
+        <div class="mid_bottom_txt">
+          <p>위 옵션선택 박스를 선택하시면 아래에 상품이 추가됩니다.</p>
+          <p>(최소주문수량 1개 이상)</p>
+          <p>TOTAL:<span>6000원</span>(1개)</p>
+        </div>
+      </div>
+
+      <div class="right_bottom">
+        <div><a href="#!">구매하기</a></div>
+        <div>
+          <div><a href="#!">장바구니</a></div>
+          <div><a href="#!">찜하기</a></div>
+        </div>
+      </div>
+    </div>
+  </section><!---detail_main--->
+
+
+  <div class="wrap">
+    <section id="product">
+      <div class="product_title">
+        <div><a href="#product">상품설명</a></div>
+        <div><a href="#review">상품후기</a></div>
+        <div><a href="#qna">상품문의</a></div>
+        <div><a href="#delivery">배송안내</a></div>
+        <div><a href="#exchange">교환 및 반품안내</a></div>
+      </div>
+
+      <div class="product_main">
+        <p class="product_first_txt">세로 스트라이프의 감각적인 음각라인이 돋보이는</p>
+        <p class="product_bold_txt">빈티지 플리츠 글라스 컵</p>
+        <p class="product_light_txt">가정에서뿐만 아니라 카페나 레스토랑 등<br/> 다양한 공간에서 사용하실 수 있습니다.</p>
+
+        <div class="product_img"><img src="./images/product01.jpg" alt="product01이미지"></div>
+        <div class="product_img"><img src="./images/product02.jpg" alt="product02이미지"></div>
+      
+      
+        <p class="product_bold_txt">한손에 쏙<br/>들어가는 사이즈</p>
+        <p class="product_light_txt">한손에 쏙 들어가는 아담한 사이즈로<br/>맥주나 진토닉,잭콕 등의<br/>칵테일 및 음료를 가볍게 즐겨보세요.</p>
+        
+  
+        <div class="product_img"><img src="./images/product03.jpg" alt="product03이미지"></div>
+        <div class="product_img"><img src="./images/product04.jpg" alt="product04이미지"></div>
+        <div class="product_img"><img src="./images/product05.jpg" alt="product05이미지"></div>
+        <div class="product_img"><img src="./images/product06.jpg" alt="product06이미지"></div>
+        <div class="product_img"><img src="./images/product07.jpg" alt="product07이미지"></div>
+        <div class="product_img"><img src="./images/product08.jpg" alt="product08이미지"></div>
+      </div>
+    </section><!---product 상품설명--->
+
+    <section id="review">
+      <div class="product_title">
+        <div><a href="#product">상품설명</a></div>
+        <div><a href="#review">상품후기</a></div>
+        <div><a href="#qna">상품문의</a></div>
+        <div><a href="#delivery">배송안내</a></div>
+        <div><a href="#exchange">교환 및 반품안내</a></div>
+      </div>
+
+      <div class="review_main">
+        <p class="review_title">상품후기(50)</p>
+<!--         
+        <div class="review_star">
+          <div class="review_star_left">
+            <p><i class="fa-solid fa-star"></i>4.9</p>
+            <p>98%의 구매자가 이 상품을 좋아합니다.</p>
+            <p><a href="#!">상품리뷰 작성하기</a></p>
+          </div>
+
+          <div class="review_star_right">
+            <div class="right_txt">
+              <p>아주좋아요</p>
+              <p>맘에들어요</p>
+              <p>보통이에요</p>
+              <p>그냥그래요</p>
+              <p>별로에요</p>
+            </div>
+
+            <div class="star_bar">
+              <input type="range" min="9" max="10">
+              <input type="range" min="7" max="10">
+              <input type="range" min="4" max="10">
+              <input type="range" min="0" max="10">
+              <input type="range" min="1" max="10">
+            </div>
+
+            <div class="star_number">
+              <p>40</p>
+              <p>5</p>
+              <p>2</p>
+              <p>0</p>
+              <p>3</p>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="review_photo">
+          <div><a href="#!"><img src="./images/REVIEW_1.jpg" alt="리뷰이미지1"></a></div>
+
+          <div>
+            <a href="#!">
+
+            </a>
+          </div>
+
+          <div><a href="#!"><img src="./images/REVIEW_3.jpg" alt="리뷰이미지3"></a></div>
+
+          <div>
+            <a href="#!">
+   
+            </a>
+          </div>
+
+          <div><a href="#!"><img src="./images/REVIEW_5.jpg" alt="리뷰이미지5"></a></div>
+        </div> -->
+<!-- 
+        <div class="review_button">
+          <div><a href="#!">추천순</a></div>
+          <div><a href="#!">최신순</a></div>
+          <div><a href="#!">평점순</a></div>
+          <input type="text" placeholder="리뷰키워드검색">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div> -->
+
+        <div class="star_select">
+          <select>
+            <option>별점</option>
+            <option>★</option>
+            <option>★★</option>
+            <option>★★★</option>
+            <option>★★★★</option>
+            <option>★★★★★</option>
+          </select>
+        </div>
+
+        <div class="review_text">
+          <div>
+            <p><span>★★★★★</span> 아주좋아요</p>
+            <p>오목해서 과일담기 좋아요!</p>
+            <p>도움돼요<i class="fa-regular fa-thumbs-up"></i>
+              도움안돼요<i class="fa-regular fa-thumbs-down"></i>
+            </p>
+          </div>
+          <div>
+            <p>2022.10.11</p>
+          </div>
+          <div>
+            <p>정다*님의 리뷰입니다.</p>
+            <p>플리츠 플라워글라스</p>
+          </div>
+        </div>
+
+        <!-- <div class="review_text">
+          <div>
+            <p><span>★★★☆☆</span>보통이에요</p>
+            <p>유리가 도톰해서 잘 안깨질꺼 같아서 좋아요!<br/>한식,파스타등 다양한 음식을 담아서 사용할 수 있을꺼 같아요!!</p>
+            <p>도움돼요<i class="fa-regular fa-thumbs-up"></i>
+              도움안돼요<i class="fa-regular fa-thumbs-down"></i>
+            </p>
+          </div>
+          <div>
+            <p>2022.09.27</p>
+          </div>
+          <div>
+            <p>정병*님의 리뷰입니다.</p>
+            <p>플리츠 오렌지글라스 <br/>플리츠 복숭아글라스</p>
+          </div>
+        </div> -->
+
+        <!-- <div class="review_text">
+          <div>
+            <p><span>★★★★☆</span> 맘에들어요</p>
+            <p>뭘 담아도 어울리고 이뻐요~사이즈도 적당합니다.<br/>분위기 전환하고싶을때 사용하기 딱이에요ㅎㅎ</p>
+            <p>도움돼요<i class="fa-regular fa-thumbs-up"></i>
+              도움안돼요<i class="fa-regular fa-thumbs-down"></i>
+            </p>
+          </div>
+          <div>
+            <p>2022.09.07</p>
+          </div>
+          <div>
+            <p>허영*님의 리뷰입니다.</p>
+            <p>플리츠 오렌지글라스 <br/>플리츠 블루베리글라스</p>
+          </div>
+        </div> -->
+
+        <!-- <div class="review_text">
+          <div>
+            <p><span>★★★★★</span> 아주좋아요</p>
+            <p>그립감이좋고 사이즈가적당합니다</p>
+            <p>도움돼요<i class="fa-regular fa-thumbs-up"></i>
+              도움안돼요<i class="fa-regular fa-thumbs-down"></i>
+            </p>
+          </div>
+          <div>
+            <p>2022.08.10</p>
+          </div>
+          <div>
+            <p>유인*님의 리뷰입니다.</p>
+            <p>플리츠 복숭아글라스</p>
+          </div>
+        </div> -->
+
+        <div class="page_nation">
+          <ul>
+            <li><a href="#!"><i class="fa-solid fa-chevron-left"></i></a></li>
+            <li><a href="#!">1</a></li>
+            <li><a href="#!">2</a></li>
+            <li><a href="#!">3</a></li>
+            <li><a href="#!">4</a></li>
+            <li><a href="#!"><i class="fa-solid fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+
+      </div><!--review_box-->
+    </section><!---review 상품리뷰--->
+
+    <section id="qna">
+      <div class="product_title">
+        <div><a href="#product">상품설명</a></div>
+        <div><a href="#review">상품후기</a></div>
+        <div><a href="#qna">상품문의</a></div>
+        <div><a href="#delivery">배송안내</a></div>
+        <div><a href="#exchange">교환 및 반품안내</a></div>
+      </div>
+
+
+      <p class="review_title">상품문의</p>
+      <div class="qna_main">
+       
+        <div class="qna_title">
+          <p>번호</p>
+          <p>제목</p>
+          <p>작성자</p>
+          <p>작성일</p>
+          <p>조회</p>
+        </div>
+        
+        <div>
+          <p>1</p>
+          <p><i class="fa-solid fa-lock"></i><a href="#!"> 배송/반품 문의</a></p>
+          <p>정다*</p>
+          <p>2022-10-01</p>
+          <p>10</p>
+        </div>
+        
+        <div>
+          <p>2</p>
+          <p><i class="fa-solid fa-lock"></i><a href="#!">상품문의</a></p>
+          <p>유인*</p>
+          <p>2022-09-10</p>
+          <p>2</p>
+        </div>
+
+        <div>
+          <p>3</p>
+          <p><a href="#!">견적문의</a></p>
+          <p>허영*</p>
+          <p>2022-09-02</p>
+          <p>5</p>
+        </div>
+
+        <div>
+          <p>4</p>
+          <p><a href="#!">견적문의</a></p>
+          <p>이정*</p>
+          <p>2022-08-25</p>
+          <p>8</p>
+        </div>
+
+        <div>
+          <p>5</p>
+          <p><i class="fa-solid fa-lock"></i><a href="#!">배송/반품문의</a></p>
+          <p>정병*</p>
+          <p>2022-08-10</p>
+          <p>30</p>
+        </div>
+      </div>
+
+      <div class="page_nation">
+        <ul>
+          <li><a href="#!"><i class="fa-solid fa-chevron-left"></i></a></li>
+          <li><a href="#!">1</a></li>
+          <li><a href="#!">2</a></li>
+          <li><a href="#!">3</a></li>
+          <li><a href="#!">4</a></li>
+          <li><a href="#!"><i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+      </div>
+    </section><!---qna_main 상품문의--->
+  
+    
+  
+    <section id="delivery">
+      <div class="product_title">
+        <div><a href="#product">상품설명</a></div>
+        <div><a href="#review">상품후기</a></div>
+        <div><a href="#qna">상품문의</a></div>
+        <div><a href="#delivery">배송안내</a></div>
+        <div><a href="#exchange">교환 및 반품안내</a></div>
+      </div>
+
+
+      <p class="review_title">배송안내</p>
+      <div class="delivery_main">  
+        
+        <div>
+          <p class="delivery_title">배송방법</p>
+          <p class="delivery_txt">택배(대한통운)</p>
+        </div>
+        
+        <div>
+          <p class="delivery_title">배송지역</p>
+          <p class="delivery_txt">전국지역</p>
+        </div>
+
+        <div>
+          <p class="delivery_title">배송비용</p>
+          <p class="delivery_txt">3500원</p>
+        </div>
+
+        <div>
+          <p class="delivery_title">배송기간</p>
+          <p class="delivery_txt">2~10일</p>
+       
+        </div>
+
+        <div>
+          <p class="delivery_title">배송안내</p>
+          <p class="delivery_txt_long">고객님께서 주문하신 상품은 입금 확인 후 배송 해드립니다. </p>
+           <p class="delivery_txt_long"> 다만, 상품종류에 따라 상품의 배송이 다소 지연될 수 있습니다.</p>
+           <p class="delivery_txt_long">  네이버페이로 주문 시, 제주도 배송비가 설정이 되지않습니다.</p>
+        </div>
+      </div>
+    </section><!---delivery 배송안내--->
+
+
+    <section id="exchange">
+      <div class="product_title">
+        <div><a href="#product">상품설명</a></div>
+        <div><a href="#review">상품후기</a></div>
+        <div><a href="#qna">상품문의</a></div>
+        <div><a href="#delivery">배송안내</a></div>
+        <div><a href="#exchange">교환 및 반품안내</a></div>
+      </div>
+
+
+      <p class="review_title">교환 및 반품안내</p>
+      <div class="exchange_main">  
+        <div>
+          <p class="exchange_title">교환 및 반품이 가능한 경우</p>
+          <p class="exchange_txt top">-상품을 공급 받으신 날로부터 7일 이내 사전연락을 통하여 사유가 명확할시 교환 및 반품이 가능함</p>
+           
+          <p class="exchange_txt top">
+            -공급받으신 상품 및 용역의 내용이 표시, 광고 내용과 다르거나 다르게 이행된 경우에는 공급받은<br/><br/>날로부터 3월이내, 그사실을 알게 된 날로부터 30일이내 가능함.
+          </p>
+          
+        </div>
+        
+        <div>
+          <p class="exchange_title">
+            교환 및 반품이 불가능한 경우
+          </p>
+          <p class="exchange_txt bottom">
+            -고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된 경우, 
+            단, 상품의 내용을 확인하기 위하여 포장등을 훼손한 경우는 제외
+          </p>
+          <p class="exchange_txt bottom">
+            -포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우
+          </p>
+          <p class="exchange_txt bottom">
+            -고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우<br/>
+            (자세한 내용은 고객만족센터 1:1 E-MAIL 상담을 이용해 주시기 바랍니다.)
+          </p>
+          <p class="exchange_txt bottom">
+            ※ 고객님의 마음이 바뀌어 교환, 
+            반품을 하실 경우 상품반송 비용은 고객님께서 부담하셔야 합니다. <br/>
+            (색상, 교환, 사이즈교환등 포함)
+          </p>
+        </div>
+      </div>
+    </section><!---exchange 교환 및 반품안내 --->
+  </div><!---wrap--->
+
+
+  <footer class="footer">
+    <div class="footer_top">
+      <div><img src="./images/풋터로고.png" alt="풋터로고"></div>
+      <ul>
+        <li>상호명</li>
+        <li>대표자</li>
+        <li>대표전화</li>
+        <li>고객센터</li>
+        <li>사업자등록번호</li>
+      </ul>
+      <ul>
+        <li><span>COMPANY</span></li>
+        <li>따뜻한 식탁</li>
+        <li>김윤미</li>
+        <li>010-8626-6542</li>
+        <li>1577-3561</li>
+        <li>617-25-31153</li>
+      </ul>
+      <ul>
+        <li><span>SHOP GUIDE</span></li>
+        <li><a href="../../index.html"> HOME</a></li>
+        <li><a href="#!">개인정보처리방침</a></li>
+        <li><a href="#!">이용약관</a></li>
+        <li><a href="#!">이용안내</a></li>
+        <li><a href="#!">회사소개</a></li>
+      </ul>
+      <ul>
+        <li><span>고객문의</span></li>
+        <li><a href="#!">자주 묻는 질문</a></li>
+        <li><a href="#!">1:1 맞춤상담</a></li>
+        <li><a href="#!">배송조회</a></li>
+        <li><a href="#!">카카오톡상담</a></li>
+      </ul>
+      <ul>
+        <li><span>C/S CENTER</span></li>
+        <li>월~금 AM 10:00 ~ PM 16:00</li>
+        <li>점심시간 PM 12:00 ~ PM 13:00</li>
+        <li>토요일, 일요일 공휴일 휴무</li>
+      </ul>
+    </div>
+    
+    <div class="footer_bottom">
+      <ul>
+        <li>COPYRIGHT  WARMTABLE ALL RIGHT RESERVED.</li>
+        <li>주소 48311 부산광역시 수영구 황령대로 481번길 56 (남천동) 백운빌딩 3층</li>
+      </ul>
+      <ul>
+        <li>통신판매업신고  2016-부산수영-2094</li>
+        <li>결제대금예치업 등록번호 02-006-00024[서비스가입사실확인]</li>
+      </ul>
+    </div>
+  </footer><!--footer-->
+
+  <aside class="quick_menu">
+    <div class="quick_top">
+      <a href="../../index.html">
+        <i class="fa-solid fa-house"></i>
+        <p>HOME</p>
+      </a>
+    </div>
+
+    <div class="quick_mid">
+      <p>최근 본 상품</p>
+      <div>
+        <a href="./detail_index.html">
+          <img src="./images/quick_01.jpg" alt="퀵메뉴이미지01">
+          <div class="delete">X</div>
+        </a>
+      </div>
+
+      <div>
+        <a href="./detail_index.html">
+          <img src="./images/quick_02.jpg" alt="퀵메뉴이미지02">
+          <div class="delete">X</div>
+        </a>
+      </div>
+    </div>
+
+    <a class="top_btn">TOP</a>
+
+</aside><!--quick_menu-->
+</body>
+</html>
+
+
